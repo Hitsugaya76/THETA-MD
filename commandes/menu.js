@@ -32,22 +32,22 @@ const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
 ╔════════════ 𝚻𝚮𝚵𝚻𝚫-𝚳𝐃 ═══════════
-┃    ╭────────────────
-┃ ◈ │_Préfixe_ : ${s.PREFIXE}
-┃ ◈ │_Owner_ : ${s.NOM_OWNER}    
-┃ ◈ │_Mode_ : ${mode}
-┃ ◈ │_Commandes_:${cm.length}
-┃ ◈ │_Date_ : ${date}
-┃ ◈ │_Heure_ : ${temps}
-┃ ◈ │_Mémoire_ : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-┃ ◈ │_Plateforme_ : ${os.platform()}
-┃ ◈ │_Développeurs_ : *RYUZAKI alias 𝐋*
-┃    ╰─────────────────
+┃   ╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃◈ │*Préfixe* : ${s.PREFIXE}
+┃◈ │*Owner* : ${s.NOM_OWNER}    
+┃◈ │*Mode* : ${mode}
+┃◈ │*Commandes*:${cm.length}
+┃◈ │*Date* : ${date}
+┃◈ │*Heure* : ${temps}
+┃◈ │*Mémoire* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+┃◈ │*Plateforme* : ${os.platform()}
+┃◈ │*Développeurs* : *RYUZAKI alias 𝐋*
+┃   ╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ╚══════════════════════════════════\n\n`;
     
 let menuMsg = `
 👋 salut ${nomAuteurMessage} 👋
-Je suis *${s.BOT}*, un bot développé par *L alias RYUZAKI*.
+Je suis *${s.BOT}*, un bot développé par *Ryuzaki alias 𝐋*.
 
 *Voici la liste de mes commandes :*
 ❏                             ❏
@@ -60,7 +60,7 @@ Je suis *${s.BOT}*, un bot développé par *L alias RYUZAKI*.
 *►❃* ${cmd}`;
         }
         menuMsg += `
-❏╚════ ❏ ❏ ═══╝❏ \n`
+❏————— ❏ ❏ —————❏ \n`
     }
 
     menuMsg += `
