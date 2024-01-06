@@ -29,12 +29,13 @@ zokou({ nomCom: "appel", categorie: "Groupe", reaction: "📣" }, async (dest, z
   var tag = ""; let car = `──────▄▌▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▌\n───▄▄██▌█ la Caravane du\n▄▄▄▌▐██▌█ bonheur arrive\n███████▌█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▌\n▀(⊙)▀▀▀▀▀▀▀(⊙)(⊙)▀▀▀▀▀▀▀▀▀▀(⊙)▀▀`
 
   tag += `========================\n  
-        🌟 *Zokou-Md* 🌟
+        😎 *Theta-Md* 😎
 ========================\n
 👥 Groupe : ${nomGroupe} 🚀 
 👤 Auteur : *${nomAuteurMessage}* 👋 
 📜 Message : *${mess}* 📝
-========================\n
+
+                        \n
 \n
 
 ` ;
@@ -127,10 +128,10 @@ zokou({ nomCom: "nommer", categorie: "Groupe", reaction: "👨🏿‍💼" }, as
 
           } else { return repondre("Cet utilisateur ne fait pas partir du groupe."); }
         }
-        else { return repondre("Désolé je ne peut pas effectuer cette action car je ne suis pas administrateur du groupe .") }
+        else { return repondre("Désolé je ne peut pas effectuer cette action car je ne suis pas administrateur du groupe.") }
 
       } else { repondre("veuiller taguer le membre à nommer"); }
-    } else { return repondre("Désolé je ne peut pas effectuer cette action car vous n'êtes pas administrateur du groupe .") }
+    } else { return repondre("Désolé je ne peut pas effectuer cette action car vous n'êtes pas administrateur du groupe.") }
   } catch (e) { repondre("oups " + e) }
 
 })
@@ -249,7 +250,7 @@ zokou({ nomCom: "retirer", categorie: "Groupe", reaction: "👨🏿‍💼" }, a
             if (admin == false) {
               const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif"
               var sticker = new Sticker(gifLink, {
-                pack: 'Zokou-Md', // The pack name
+                pack: 'Theta-Md', // The pack name
                 author: nomAuteurMessage, // The author name
                 type: StickerTypes.FULL, // The sticker type
                 categories: ['🤩', '🎉'], // The sticker category
@@ -460,14 +461,14 @@ zokou({ nomCom: "info", categorie: "Groupe" }, async (dest, zk, commandeOptions)
                repondre(`l'action de l'antibot a été actualisée sur ${arg.join('').split("/")[1]}`);
             
 
-            } else repondre('Voici une explication du fonctionnement de l\'antibot de zokou:\nPour activer l\'antibot , ajouter apres la commande "oui" ou "non";\nPour modifier l\'action de l\'antibot, tapez apres la commande action/"votre-action" ; les differentes actions sont supp ; warn et retirer')
+            } else repondre('Voici une explication du fonctionnement de l\'antibot de Theta:\nPour activer l\'antibot , ajouter apres la commande "oui" ou "non";\nPour modifier l\'action de l\'antibot, tapez apres la commande action/"votre-action" ; les differentes actions sont supp ; warn et retirer')
 
       
     } catch (error) {
        repondre(error)
     }
 
-  } else { repondre('Vous avez pas droit a cette commande')
+  } else { repondre('Vous n\'avez pas droit a cette commande')
   }
 
 });
