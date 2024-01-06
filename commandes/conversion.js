@@ -42,7 +42,7 @@ const alea = (ext) => {
     }
 
     sticker = new Sticker(buffer, {
-      pack:"Zokou-Md" ,
+      pack:"Theta-Md" ,
       author: nomAuteurMessage,
       type:
         arg.includes("crop") || arg.includes("c")
@@ -66,7 +66,7 @@ const alea = (ext) => {
     }
 
     sticker = new Sticker(buffer, {
-      pack:"Zokou-Md", // pack stick
+      pack:"Theta-Md", // pack stick
       author:  nomAuteurMessage, // nom de l auteur du stick
       type:
         arg.includes("-r") || arg.includes("-c")
@@ -116,7 +116,7 @@ mediamsg = msgRepondu.videoMessage
   else if (msgRepondu.stickerMessage) {
     mediamsg = msgRepondu.stickerMessage ;
   } else {
-    repondre('Euh un media svp'); return
+    repondre('Veillez mentionner un media svp'); return
   } ;
 
   var stick = await zk.downloadAndSaveMediaMessage(mediamsg)
@@ -152,7 +152,7 @@ mediamsg = msgRepondu.videoMessage
   else if (msgRepondu.stickerMessage) {
     mediamsg = msgRepondu.stickerMessage ;
   } else {
-    repondre('Euh un media svp'); return
+    repondre('Veillez mentionner un media svp'); return
   } ;
 
   var stick = await zk.downloadAndSaveMediaMessage(mediamsg)
@@ -224,7 +224,7 @@ zokou({ nomCom: "ecrire", categorie: "Conversion", reaction: "👨🏿‍💻" }
     // Créer le sticker
     const stickerMess = new Sticker(meme, {
       pack: nomAuteurMessage,
-      author: 'Zokou-Md',
+      author: 'Theta-Md',
       type: StickerTypes.FULL,
       categories: ["🤩", "🎉"],
       id: "12345",
@@ -302,7 +302,7 @@ zokou({nomCom:"photo",categorie: "Conversion", reaction: "👨🏿‍💻"},asyn
   if(!msgRepondu) { repondre( 'veiller mentionner le media' ) ; return } ;
  
    if (!msgRepondu.stickerMessage) {
-      repondre('Euh mentionner un sticker non-animé'); return
+      repondre('Veillez mentionner un sticker non-animé'); return
   } ;
 
  let mediaMess = await zk.downloadAndSaveMediaMessage(msgRepondu.stickerMessage);
