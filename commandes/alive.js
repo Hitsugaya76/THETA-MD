@@ -43,7 +43,7 @@ const date = moment().format('DD/MM/YYYY');
  ${message}
  
  
- *Zokou_MD version 2.0*`
+ *Theta_MD*`
 
  if (lien.match(/\.(mp4|gif)$/i)) {
     try {
@@ -74,7 +74,7 @@ else {
         if(!superUser) { repondre("il n'a pas d'alive pour ce bot") ; return};
 
       await   repondre("Vous n'avez pas encore enregistrer votre alive , pour ce faire ;\n tapez entrez apres alive votre message et votre lien image ou video dans ce contete : .alive message;lien");
-         repondre(" je prend mon temps pour t'expliquer ; gars a toi si tu fait faux")
+         repondre(" Fait le correctement ; la commande fonctionne ")
      }
  } else {
 
