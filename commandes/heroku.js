@@ -11,7 +11,7 @@ zokou(
        const {ms,repondre,superUser , arg} = commandeOptions ;
        
        if(!superUser){repondre('Commande reserver au proprietaire du bot');return};
-       if(!arg[0] || !(arg.join('').split('='))) {repondre('Mauvais formats ; voici le mode d\'emploie.\nSetvar NOM_OWNER=Fredora');return};
+       if(!arg[0] || !(arg.join('').split('='))) {repondre('Mauvais formats ; voici le mode d\'emploie.\nSetvar NOM_OWNER=Ryuzaki');return};
      
     const text = arg.join(" ")
      const Heroku = require("heroku-client");
@@ -69,7 +69,7 @@ str+= '🍁 *'+vr+'* '+'= '+h[vr]+'\n'
            const {ms,repondre,superUser , arg} = commandeOptions ;
            
            if(!superUser){repondre('Commande reserver au proprietaire du bot');return}; 
-           if(!arg[0]) {repondre('Inserez le nom de la variabke en grand Charactere'); return} ;
+           if(!arg[0]) {repondre('Inserez le nom de la variable en grand Charactere'); return} ;
       
            try {
             const Heroku = require("heroku-client");
