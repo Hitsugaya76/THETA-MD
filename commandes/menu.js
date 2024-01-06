@@ -41,13 +41,13 @@ const date = moment().format('DD/MM/YYYY');
 ┃ ◈ │_Heure_ : ${temps}
 ┃ ◈ │_Mémoire_ : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 ┃ ◈ │_Plateforme_ : ${os.platform()}
-┃ ◈ │_Développeurs_ : L
+┃ ◈ │_Développeurs_ : *RYUZAKI alias 𝐋*
 ┃    ╰─────────────────
 ╚══════════════════════════════════\n\n`;
     
 let menuMsg = `
 👋 salut ${nomAuteurMessage} 👋
-Je suis *${s.BOT}*, un bot développé par *La team Zokou*.
+Je suis *${s.BOT}*, un bot développé par *L alias RYUZAKI*.
 
 *Voici la liste de mes commandes :*
 ❏                             ❏
@@ -77,7 +77,7 @@ Pour utiliser une  commande, tapez  ${prefixe}"nom de la commande"
 
    if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Zokou-MD*, développé par Djalega++" }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Theta-MD*, développé par Ryuzaki" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
@@ -87,7 +87,7 @@ Pour utiliser une  commande, tapez  ${prefixe}"nom de la commande"
 // Vérification pour .jpeg ou .png
 else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Zokou-MD*, développé par Djalega++" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Theta-MD*, développé par Ryuzaki" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
