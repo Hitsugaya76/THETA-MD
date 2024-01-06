@@ -76,7 +76,7 @@ Owner : ${s.NOM_OWNER} \n       || Commandes : ${cm.length} \n        || Date : 
 ┃ ◈ │_Heure_ : ${temps}
 ┃ ◈ │_Mémoire_ : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 ┃ ◈ │_Plateforme_ : ${os.platform()}
-┃ ◈ │_Développeurs_ : L
+┃ ◈ │_Développeurs_ : RYUZAKI allias 𝐋
 ┃    ╰─────────────────
 ╚══════════════════════════════════\n\n`;
 
@@ -188,7 +188,7 @@ var tt=[]
 
     var link = "https://wallpapercave.com/uwp/uwp3860299.jpeg"
     // var listCom =listeCommande()
-    let msg= "  ╩═══ * Ƶ𝓞ｋØ𝓊 * ╩═══\n\n"
+    let msg= "  ╩═══ * Theta * ╩═══\n\n"
 
 
 //const listeCommande= async ()=> {
