@@ -33,14 +33,14 @@ cm.map(async(com,index)=>{if(!coms[com.categorie])coms[com.categorie]=[]; coms[c
  console.log("date" +date) 
   console.log("temps "+temps)
   
-let menuMsg="  ╩═══ * Ƶ𝓞ｋØ𝓊 * ╩═══\n\n";
+let menuMsg="  ╩═══ * THETA * ╩═══\n\n";
 
   
 /*menuMsg+=`
 
 
 
-Owner : ${s.NOM_OWNER} \n       || Commandes : ${cm.length} \n        || Date : ${date}\n || Heure : ${temps} \n || Mémoire : ${format(os.totalmem()-os.freemem())}/${format(os.totalmem())}\n || Plateforme : ${os.platform()}\n || Developpeur : Djalega++ \n\n ╰────────────────`;
+Owner : ${s.NOM_OWNER} \n       || Commandes : ${cm.length} \n        || Date : ${date}\n || Heure : ${temps} \n || Mémoire : ${format(os.totalmem()-os.freemem())}/${format(os.totalmem())}\n || Plateforme : ${os.platform()}\n || Developpeur : L \n\n ╰────────────────`;
 
 
 
@@ -60,7 +60,7 @@ Owner : ${s.NOM_OWNER} \n       || Commandes : ${cm.length} \n        || Date : 
 ||      Date : ${date}
 ||      Heure : ${temps}
 ||      Mémoire : ${format(os.totalmem()-os.freemem())}/${format(os.totalmem())}                   {Plateforme : ${os.platform()}
-||  Développeurs : Djalega++||Luffy
+||  Développeurs : L
 || 
 ╚════ ▓▓ ࿇ ▓▓ ════╝`;*/
 
@@ -79,7 +79,6 @@ Owner : ${s.NOM_OWNER} \n       || Commandes : ${cm.length} \n        || Date : 
 ║ 
 ║           ▎▍▌▌▉▏▎▌▉▐▏▌▎
 ║           ▎▍▌▌▉▏▎▌▉▐▏▌▎
-║           ${BOT_INFO.split(";")[0]}
 ╚════--------------- \n\n`;
 
 
