@@ -229,7 +229,7 @@ await zk.groupParticipantsUpdate(
     await sleep(500)
     
   }  
-} catch (e) {repondre("j'ai besoins des droit d'administration")} } else {
+} catch (e) {repondre("commande réserver aux administrateurs")} } else {
   repondre("Commande reserver au proprietaire du groupe pour des raisons de securitée"); return
 }
 });
@@ -245,7 +245,7 @@ zokou({
   if (!superUser) {repondre('Cette commande n\'est permis qu\'au proprietaire du bot') ; return}
     if (!arg[0]) {
         // Fonction 'repondre' doit être définie pour envoyer une réponse.
-        repondre(`mentionner la victime een tappant ${prefixe}ban add/del pour bannir/debannir la victime`);
+        repondre(`mentionner la victime en tappant ${prefixe}ban add/del pour bannir/debannir la victime`);
         return;
     };
 
@@ -255,20 +255,20 @@ zokou({
 
            
    let youareban = await isUserBanned(auteurMsgRepondu)
-           if(youareban) {repondre('Ce utilisateur est deja bannis') ; return}
+           if(youareban) {repondre('Cet(e) utilisateur est deja bannis') ; return}
                
            addUserToBanList(auteurMsgRepondu) ;
            
-           repondre('Cet utiisateur est desormais banni des commandes du bot')
+           repondre('Cet(e) utiisateur est desormais banni des commandes du bot')
                 break;
                 case 'del':
                   let estbanni = await isUserBanned(auteurMsgRepondu)
     if (estbanni) {
         
         removeUserFromBanList(auteurMsgRepondu);
-        repondre('Cet utilisateur est maintenant libre.');
+        repondre('Cet(e) utilisateur est maintenant libre.');
     } else {
-      repondre('Cet utilisateur n\'est pas banni.');
+      repondre('Cet(e) utilisateur n\'est pas banni.');
     }
     break;
 
@@ -377,7 +377,7 @@ if(!verifGroupe) {repondre('commande reserver pour les groupes' ) ; return };
               repondre('mauvaise option');
               break;
       }
-} else { repondre('Vous avez pas droit a cette commande')}
+} else { repondre('Vous n\'avez pas droit a cette commande')}
 });
 
 zokou({
@@ -401,7 +401,7 @@ if (!superUser) {repondre('Cette commande n\'est permis qu\'au proprietaire du b
 
          
  let youaresudo = await issudo(auteurMsgRepondu)
-         if(youaresudo) {repondre('Ce utilisateur est deja sudo') ; return}
+         if(youaresudo) {repondre('Cet utilisateur est deja sudo') ; return}
              
          addSudoNumber(auteurMsgRepondu)
          repondre('succes')
