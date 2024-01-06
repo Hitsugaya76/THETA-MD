@@ -45,6 +45,8 @@ zokou({ nomCom: "menu", categorie: "Général" }, async (dest, zk, commandeOptio
    ||      Heure : ${temps}
    ||      Mémoire : ${format(os.totalmem()-os.freemem())}/${format(os.totalmem())}                   {Plateforme : ${os.platform()}
    ||  Développeurs : Djalega++||Luffy
+   ||         ▎▍▌▌▉▏▎▌▉▐▏▌▎
+   ||         ▎▍▌▌▉▏▎▌▉▐▏▌▎
    ||
    ╚════ ▓▓ ࿇ ▓▓ ════╝`;*/
     menuMsg += `
@@ -57,7 +59,10 @@ zokou({ nomCom: "menu", categorie: "Général" }, async (dest, zk, commandeOptio
 ║    Heure : ${temps}
 ║    Mémoire : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 ║    Plateforme : ${os.platform()}
-║    Développeurs : Djalega++||Luffy
+║     Développeurs : Djalega++||Luffy
+║             ▎▍▌▌▉▏▎▌▉▐▏▌▎
+║             ▎▍▌▌▉▏▎▌▉▐▏▌▎
+║
 ╚════--------------- \n\n`;
     for (const cat in coms) {
         if (!emoji[cat]) {
