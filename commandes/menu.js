@@ -6,7 +6,7 @@ const os = require("os");
 const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
 
-zokou({ nomCom: "menu", reaction:"📁",categorie: "Général" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "menu", reaction:"📦",categorie: "Général" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../framework//zokou");
     var coms = {};
@@ -31,47 +31,46 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-╔════════〘 *_'+newn+"_* 〙════──────────────
-║    *_Préfixe*_ : ${s.PREFIXE}
-║    *_Owner*_ : ${s.NOM_OWNER}    
-║    *_Mode*_ : ${mode}
-║    *_Commandes*_:${cm.length}
-║    *_Date*_ : ${date}
-║    *_Heure*_ : ${temps}
-║    *_Mémoire*_ : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-║    *_Plateforme*_ : ${os.platform()}
-║    *_Développeurs*_ : L
-║ 
-║           ▎▍▌▌▉▏▎▌▉▐▏▌▎
-║           ▎▍▌▌▉▏▎▌▉▐▏▌▎
-╚════--------------- \n\n`;
+╔════════════ 𝚻𝚮𝚵𝚻𝚫-𝚳𝐃 ═══════════
+┃    ╭────────────────
+┃ ◈ │_Préfixe_ : ${s.PREFIXE}
+┃ ◈ │_Owner_ : ${s.NOM_OWNER}    
+┃ ◈ │_Mode_ : ${mode}
+┃ ◈ │_Commandes_:${cm.length}
+┃ ◈ │_Date_ : ${date}
+┃ ◈ │_Heure_ : ${temps}
+┃ ◈ │_Mémoire_ : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+┃ ◈ │_Plateforme_ : ${os.platform()}
+┃ ◈ │_Développeurs_ : L
+┃    ╰─────────────────
+╚══════════════════════════════════\n\n`;
     
 let menuMsg = `
 👋 salut ${nomAuteurMessage} 👋
 Je suis *${s.BOT}*, un bot développé par *La team Zokou*.
 
 *Voici la liste de mes commandes :*
-◇                             ◇
+❏                             ❏
 `;
 
     for (const cat in coms) {
-        menuMsg += `*╔══✵* *${cat}*  *✵ ══╗*`;
+        menuMsg += `*╔══ ◈* *${cat}*  *◈ ══╗*`;
         for (const cmd of coms[cat]) {
             menuMsg += `
-*✗✪* ${cmd}`;
+*►❃* ${cmd}`;
         }
         menuMsg += `
-*╚════ ✵ ✵ ═══╝* \n`
+❏╚════ ❏ ❏ ═══╝❏ \n`
     }
 
     menuMsg += `
-◇            ◇
-*»»————— ★ —————««*
+❏            ❏
+*❃————— •✧✧• —————❃*
 Pour utiliser une  commande, tapez  ${prefixe}"nom de la commande"
  
- *『ZokouMD*
+ *『ThetaMD*
                                                 
-*»»————— ★ —————««*
+*❃————— •✧✧• —————❃*
 `;
 
    var lien = mybotpic();
