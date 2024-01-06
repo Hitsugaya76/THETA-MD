@@ -93,7 +93,7 @@
     
     "desc": "Votre numero de telephone; il doit etre dans le format ID+numero",
     "required":false,
-    "value": "243993366258"
+    "value": "22891733300"
   },
     
 
@@ -114,3 +114,7 @@
 
   "addons":[
     {
+      "plan":"heroku-postgresql"
+    }
+  ]
+}
