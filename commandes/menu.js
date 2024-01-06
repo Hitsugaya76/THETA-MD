@@ -32,19 +32,18 @@ const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
 ╔════════〘 *_'+newn+"_* 〙════──────────────
-║    Préfixe*_ : ${s.PREFIXE}
-║    Owner*_ : ${s.NOM_OWNER}    
-║    Mode*_ : ${mode}
-║    Commandes*_:${cm.length}
-║    Date*_ : ${date}
-║    Heure*_ : ${temps}
-║    Mémoire*_ : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-║    Plateforme*_ : ${os.platform()}
-║    Développeurs*_ : L
+║    *_Préfixe*_ : ${s.PREFIXE}
+║    *_Owner*_ : ${s.NOM_OWNER}    
+║    *_Mode*_ : ${mode}
+║    *_Commandes*_:${cm.length}
+║    *_Date*_ : ${date}
+║    *_Heure*_ : ${temps}
+║    *_Mémoire*_ : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+║    *_Plateforme*_ : ${os.platform()}
+║    *_Développeurs*_ : L
 ║ 
 ║           ▎▍▌▌▉▏▎▌▉▐▏▌▎
 ║           ▎▍▌▌▉▏▎▌▉▐▏▌▎
-║           ${BOT_INFO.split(";")[0]}
 ╚════--------------- \n\n`;
     
 let menuMsg = `
