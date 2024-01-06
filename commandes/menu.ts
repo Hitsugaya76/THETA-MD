@@ -66,20 +66,19 @@ Owner : ${s.NOM_OWNER} \n       || Commandes : ${cm.length} \n        || Date : 
 
 
   menuMsg+=`
-╔════════〘 *_'+newn+"_* 〙════──────────────
-║    Préfixe*_ : ${s.PREFIXE}
-║    Owner*_ : ${s.NOM_OWNER}    
-║    Mode*_ : ${mode}
-║    Commandes*_:${cm.length}
-║    Date*_ : ${date}
-║    Heure*_ : ${temps}
-║    Mémoire*_ : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-║    Plateforme*_ : ${os.platform()}
-║    Développeurs*_ : L
-║ 
-║           ▎▍▌▌▉▏▎▌▉▐▏▌▎
-║           ▎▍▌▌▉▏▎▌▉▐▏▌▎
-╚════--------------- \n\n`;
+╔════════════ 𝚻𝚮𝚵𝚻𝚫-𝚳𝐃 ═══════════
+┃    ╭────────────────
+┃ ◈ │_Préfixe_ : ${s.PREFIXE}
+┃ ◈ │_Owner_ : ${s.NOM_OWNER}    
+┃ ◈ │_Mode_ : ${mode}
+┃ ◈ │_Commandes_:${cm.length}
+┃ ◈ │_Date_ : ${date}
+┃ ◈ │_Heure_ : ${temps}
+┃ ◈ │_Mémoire_ : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+┃ ◈ │_Plateforme_ : ${os.platform()}
+┃ ◈ │_Développeurs_ : L
+┃    ╰─────────────────
+╚══════════════════════════════════\n\n`;
 
 
 
@@ -115,7 +114,7 @@ for(const cat in coms )
 
 
   try{
-    zk.sendMessage(dest,{image:{url:link},caption:menuMsg,footer:"by Djalega++"},{quoted:ms})
+    zk.sendMessage(dest,{image:{url:link},caption:menuMsg,footer:"by Ryuzaki"},{quoted:ms})
   }catch(e){console.log("🥵🥵 Menu erreur "+e); repondre("🥵🥵 Menu erreur "+e)}
 
   
