@@ -4,6 +4,7 @@ const { fetchVideo } = require('@prevter/tiktok-scraper');
 const { writeFileSync } = require('fs');
 const mumaker = require("mumaker");
 const getFBInfo = require("@xaviabot/fb-downloader");
+const insta = require('insta');
 
 zokou({nomCom : "igdl" , categorie : "Téléchargement"},async (dest , zk , commandeOptions)=>{
   const {ms,repondre,arg} = commandeOptions ;
@@ -97,6 +98,49 @@ zokou({ nomCom: "tiktok", categorie: "Téléchargement", reaction: "🎵" }, asy
 
       
       zk.sendMessage(dest, { image: { url: thumbnail }, caption: caption},{quoted : ms});
+
+      // Envoi de la vidéo sans commentaire
+      zk.sendMessage(dest, { video: { url: data.media } });
+
+      // Envoi des autres informations
+      
+    })
+    .catch((err) => {
+      console.error("Une erreur s'est produite :", err);
+    });
+});
+
+zokou({ nomCom: "insta", categorie: "Téléchargement", reaction: "📍" }, async (dest, zk, commandeOptions) => {
+  const { arg, ms, prefixe,repondre } = commandeOptions;
+  if (!arg[0]) {
+        repondre(`Voici comment utiliser la commande:\n ${prefixe}veiller lien_video_instagram`);
+    return;
+  }
+
+  const videoUrl = arg.join(" ");
+  mumaker.insta(videoUrl)
+    .then((data) => {
+      const thumbnail = data.thumbnail;
+      const author = data.author;
+      const description = data.description;
+      const media = Array.isArray(data.media) ? data.media.join(", ") : data.media;
+      const music = data.music;
+      const like = data.like;
+      const comment = data.comment;
+      const share = data.share;
+
+       // Envoi du message avec le thumbnail de la vidéo
+      const caption = `
+        Auteur: ${author}
+        Description: ${description}
+        Média: ${media}
+        Musique: ${music}
+        J'aime: ${like}
+        Commentaire: ${comment}
+        Partages: ${share}
+      `;
+
+       zk.sendMessage(dest, { image: { url: thumbnail }, caption: caption},{quoted : ms});
 
       // Envoi de la vidéo sans commentaire
       zk.sendMessage(dest, { video: { url: data.media } });
