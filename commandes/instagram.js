@@ -1,4 +1,5 @@
 const {zokou} = require('../framework/zokou');
+const insta = require('insta');
 cmd({
         pattern: "insta",
         desc: "Téléchargement de la vidéo instagram.",
