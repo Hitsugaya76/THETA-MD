@@ -31,8 +31,9 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-╔════════════ 𝚻𝚮𝚵𝚻𝚫-𝚳𝐃 ═══════════
-┃   ╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  menuMsg+=`
+╔════════════⟪ 𝚻𝚮𝚵𝚻𝚫-𝚳𝐃 ⟫═══════════
+┃   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ┃◈ │*Préfixe* : ${s.PREFIXE}
 ┃◈ │*Owner* : ${s.NOM_OWNER}    
 ┃◈ │*Mode* : ${mode}
@@ -41,8 +42,8 @@ const date = moment().format('DD/MM/YYYY');
 ┃◈ │*Heure* : ${temps}
 ┃◈ │*Mémoire* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 ┃◈ │*Plateforme* : ${os.platform()}
-┃◈ │*Développeurs* : *RYUZAKI alias 𝐋*
-┃   ╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃◈ │*Développeur* : *RYUZAKI alias 𝐋*
+┃   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ╚══════════════════════════════════\n\n`;
     
 let menuMsg = `
@@ -54,10 +55,10 @@ Je suis *${s.BOT}*, un bot développé par *Ryuzaki alias 𝐋*.
 `;
 
     for (const cat in coms) {
-        menuMsg += `*╔══ ◈* *${cat}*  *◈ ══╗*`;
+        menuMsg += `*┏━━━━━━━━━━ ◈* *${cat}*  *◈ ━━━━━━━━━❃*`;
         for (const cmd of coms[cat]) {
             menuMsg += `
-*►❃* ${cmd}`;
+*┃❃* ${cmd}`;
         }
         menuMsg += `
 ❏————— ❏ ❏ —————❏ \n`
@@ -68,7 +69,7 @@ Je suis *${s.BOT}*, un bot développé par *Ryuzaki alias 𝐋*.
 *❃————— •✧✧• —————❃*
 Pour utiliser une  commande, tapez  ${prefixe}"nom de la commande"
  
- *『ThetaMD*
+ *『ThetaMD』*
                                                 
 *❃————— •✧✧• —————❃*
 `;
