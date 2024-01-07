@@ -1,4 +1,4 @@
-const {cmd } = require('../lib')
+const {zokou} = require('../framework/zokou');
 cmd({
         pattern: "insta",
         desc: "Téléchargement de la vidéo instagram.",
