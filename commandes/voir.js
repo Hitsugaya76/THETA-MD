@@ -30,7 +30,7 @@ await zk.sendMessage(dest,{video:{url:video},caption:texte},{quoted:ms})
 }
 }else
 {
-   return repondre("Le message que vous avez mentionné n est pas un message envoyé en vue unique .")
+   return repondre("Le message que vous avez mentionné n\'est pas un message envoyé en vue unique .")
 }
 
 
