@@ -66,8 +66,8 @@ Owner : ${s.NOM_OWNER} \n       || Commandes : ${cm.length} \n        || Date : 
 
 
   menuMsg+=`
-╔════════════ 𝚻𝚮𝚵𝚻𝚫-𝚳𝐃 ═══════════
-┃   ╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╔════════════⟪ 𝚻𝚮𝚵𝚻𝚫-𝚳𝐃 ⟫═══════════
+┃   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ┃◈ │*Préfixe* : ${s.PREFIXE}
 ┃◈ │*Owner* : ${s.NOM_OWNER}    
 ┃◈ │*Mode* : ${mode}
@@ -76,8 +76,8 @@ Owner : ${s.NOM_OWNER} \n       || Commandes : ${cm.length} \n        || Date : 
 ┃◈ │*Heure* : ${temps}
 ┃◈ │*Mémoire* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 ┃◈ │*Plateforme* : ${os.platform()}
-┃◈ │*Développeurs* : *RYUZAKI alias 𝐋*
-┃   ╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃◈ │*Développeur* : *RYUZAKI alias 𝐋*
+┃   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ╚══════════════════════════════════\n\n`;
 
 
