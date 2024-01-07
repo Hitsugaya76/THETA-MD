@@ -7,6 +7,7 @@ const cheerio = require("cheerio");
 const { Sticker, createSticker, StickerTypes } = require('wa-sticker-formatter');
 const baileys_1 = require("@whiskeysockets/baileys");
 const fs = require('fs-extra');
+const insta = require('insta-extra');
 const util = require('util');
 let { listall } = require('./stylish-font');
 /*_________by Ryuzaki
@@ -165,7 +166,7 @@ function styletext(teks) {
 exports.styletext = styletext;
 /*fonction pour prendre le lienle site api.waifu
 
-by @luffy
+by @Ryuzaki
 
 
 */
@@ -267,6 +268,10 @@ const format = (0, human_readable_1.sizeFormatter)({
     keepTrailingZeroes: false,
     render: (literal, symbol) => `${literal} ${symbol}B`,
 });
+
+  isInstaUrl: (url) => {
+        /(?:(?:http|https):\/\/)?(?:www.)?(?:instagram.com|instagr.am|instagr.com)\/(\w+)/gim.test(
+            url
 exports.format = format;
 function police(text, index) {
     index = index - 1;
