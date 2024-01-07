@@ -49,7 +49,7 @@ const generateReactionCommand = (reactionName, reactionEmoji, commandName, actio
             // Convertir le GIF en vidéo et obtenir le buffer vidéo
             const videoBuffer = await GIFBufferToVideoBuffer(gifBuffer);
 
-            // Envoyer la vidéo avec Zokou
+            // Envoyer la vidéo avec Theta
             if (msgRepondu) { 
               var txt =` @${auteurMessage.split("@")[0]} a ${action} @${auteurMsgRepondu.split("@")[0]}`
        zk.sendMessage(origineMessage, { video: videoBuffer,gifPlayback: true,caption:txt,mentions:[auteurMessage,auteurMsgRepondu] }, { quoted: ms });
